@@ -4,7 +4,7 @@ _Script Bot WhatsApp Ini Gratis_
 Type: Case 
 database: X
 auth: internal 
-fitur: 3 + 3 (tes,nsfw,get) dan eval/execute
+fitur: get dan eval/execute
 Creator: Dwi-merajah
 # Note
 * Sisanya buat sendiri (database dll) sudah saya sediakan socket (untuk menambahkan function sendButton/List dll) tinggal ikutin yang lain sudah lengkap function dll sisanya mandiri yo
