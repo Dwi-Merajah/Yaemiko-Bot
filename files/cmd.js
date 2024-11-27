@@ -37,15 +37,6 @@ module.exports = async (core, m) => {
     }
 
     switch (command) {
-      case 'tes': {
-        core.reply(m.chat, 'Welcome Owner, Bot Is Now An Running', m);
-      }
-      break;
-      case 'milf': {
-        const data = await core.fetchJson(`https://api.waifu.im/search?included_tags=${command}`)
-        core.sendImage(m.chat, data.images[0].url, data.images[0].url, m)
-      }
-      break;
       case 'get': {
         try {
           if (!func.isUrl(args[0])) return core.reply(m.chat, 'Please Input Url To Get', m)
