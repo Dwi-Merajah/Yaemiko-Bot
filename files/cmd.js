@@ -96,16 +96,6 @@ module.exports = async (core, m) => {
     core.reply(m.chat, `Bot aktif dengan perintah: ${command}`, m);
   }, { category: 'main' });
 
-  core.command(["milf", "hentai", "ero", "ass", "oral", "paizuri", "ecchi"], async (m, { core, command }) => {
-    try {
-      core.reply(m.chat, global.status.wait, m);
-      const data = await core.fetchJson(`https://api.waifu.im/search?included_tags=${command}`);
-      core.sendFile(m.chat, data.images[0].url, "", global.status.done, m);
-    } catch (e) {
-      core.reply(m.chat, func.jsonFormat(e), m);
-    }
-  }, { category: 'nsfw' });
-
   core.command("get", async (m, { core, args }) => {
     try {
       if (!func.isUrl(args[0])) return core.reply(m.chat, 'Masukkan URL', m);
