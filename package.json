@@ -10,6 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "@whiskeysockets/baileys": "latest",
-    "cross-fetch": "latest"
+    "cross-fetch": "latest",
+    "moment-timezone": "^0.5.34"
   }
 }
