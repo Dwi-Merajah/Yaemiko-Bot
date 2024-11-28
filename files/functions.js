@@ -18,7 +18,7 @@ exports.tag = (nomor) => {
     return `@${data.split("@")[0]}`
 }
 exports.greeting = () => {
-   let time = moment.tz(global.timezone).format('HH')
+   let time = moment.tz"Asia/Makassar").format('HH')
    let res = `Don't forget to sleep`
    if (time >= 3) res = `Good Evening`
    if (time > 6) res = `Good Morning`
